@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanitary Fitting</title>
+    <link rel="stylesheet" href="sanitaryware.css">
+    <!-- <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        /* Header Styles */
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgb(36, 127, 219);
+            color: white;
+        }
+        
+        .nav-logo {
+            width: 2px;
+            height: 2px;
+        }
+        
+        .nav-search-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex: 2;
+            justify-content: center;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        nav ul li {
+            display: inline;
+            padding: 4px;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        
+        .search-bar input {
+            padding: 5px;
+            width: 200px;
+            border-radius: 5px;
+            border: none;
+        }
+        
+        .search-bar button {
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-left: 5px;
+        }
+        
+        .icons button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        
+        .signup-button {
+            background-color: #333;
+            color: white;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 20px;
+            text-decoration: none;
+            text-align: center;
+            width: 70px;
+        }
+        
+        .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+        }
+        
+        .banner img {
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        .filter {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        .filter h2 {
+            margin-bottom: 20px;
+        }
+        
+        .filter ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .filter ul li {
+            margin-bottom: 10px;
+        }
+        
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .product-card {
+            width: 200px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #fff;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-card img {
+            width: 100%;
+            height: auto;
+            max-height: 150px;
+            object-fit: cover;
+        }
+        
+        .product-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        
+        .product-card p {
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .product-card button {
+            background-color: rgb(36, 127, 219);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .product-card button:hover {
+            background-color: rgb(36, 127, 219);
+        }
+        
+        .topic2 h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #36454F;
+            margin-left: 50px;
+            font-size: 20px;
+            text-align: center;
+        }
+        /* Container 2 */
+        
+        .container2 {
+            display: flex;
+            background-color: white;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        .box {
+            background-color: white;
+            margin-left: 30px;
+        }
+        
+        .box img {
+            height: 200px;
+            width: 200px;
+            border: 2px solid lightgray;
+            border-radius: 15px 15px 15px 15px;
+        }
+        
+        .box h2 {
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            color: #404040;
+        }
+        /*Featured*/
+        
+        .featured-section {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .featured-section h1 {
+            margin-bottom: 20px;
+        }
+        
+        .featured-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .featured-item {
+            position: relative;
+            flex: 1 1 calc(33.333% - 10px);
+            max-width: calc(33.333% - 10px);
+            min-width: 200px;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            filter: grayscale(100%) brightness(1.2) sepia(0.5) hue-rotate(180deg) saturate(3);
+        }
+        
+        .featured-item span {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        /* Images for demonstration purposes */
+        
+        .delhi-showroom {
+            background-image: url('https://via.placeholder.com/300x200/ADD8E6/000000?text=DELHI+SHOWROOM');
+        }
+        
+        .technologies {
+            background-image: url('https://via.placeholder.com/300x200/ADD8E6/000000?text=TECHNOLOGIES');
+        }
+        
+        .washlet {
+            background-image: url('https://via.placeholder.com/300x200/ADD8E6/000000?text=WASHLET');
+        }
+        /*Other Information*/
+        
+        .container4 {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .info-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .info-item {
+            display: flex;
+            flex-wrap: wrap;
+            text-decoration: none;
+            color: black;
+            width: 45%;
+            position: relative;
+        }
+        
+        .info-item img {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+        }
+        
+        .info-text {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        
+        .info-item:first-child img {
+            content: url('img/contact-image.png');
+            /* replace with your contact image URL */
+        }
+        
+        .info-item:last-child img {
+            content: url('img/faqs-image.png');
+            /* replace with your faqs image URL */
+        }
+        /* Logo */
+        
+        .container3 {
+            background-color: #f5f5f5;
+            padding: 20px;
+            flex-wrap: wrap;
+            display: flex;
+        }
+        
+        .logo-container {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 300px;
+            width: 100%;
+        }
+        
+        .logo-container img {
+            max-width: 150px;
+            height: auto;
+            margin: 0 30px;
+            display: flex;
+            cursor: pointer;
+            flex-wrap: wrap;
+        }
+        /* Footer Section */
+        
+        footer {
+            background-color: #fafafa;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+            margin-bottom: 20px;
+            /* Add margin-bottom to create gap between sections */
+        }
+        
+        .footer-section h4 {
+            margin-top: 0;
+            color: rgb(36, 127, 219);
+            font-family: Roboto, sans-serif;
+            margin-bottom: 8px;
+        }
+        
+        .footer-section p {
+            margin: 5px 0;
+        }
+        
+        .footer-social {
+            flex-basis: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .footer-social a {
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(36, 127, 219);
+            font-size: 20px;
+        }
+        
+        .footer-social a:hover {
+            color: purple;
+        }
+        
+        .footer-bottom {
+            width: 100%;
+            text-align: center;
+            padding-top: 10px;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 20px;
+            color: #666;
+        }
+        
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: white;
+                color: black;
+                padding: 20px;
+                margin: 0;
+            }
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .container4 {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            h2 {
+                font-size: 24px;
+                margin-bottom: 20px;
+                flex-wrap: wrap;
+            }
+            .info-section {
+                display: inline-block;
+                justify-content: center;
+                gap: 20px;
+            }
+            .footer-section {
+                flex-basis: 100%;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .featured-item {
+                flex: 1 1 calc(50% - 10px);
+                max-width: calc(50% - 10px);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .featured-item {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .info-item {
+                flex: 1 1 calc(50% - 10px);
+                max-width: calc(50% - 10px);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .info-item {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style> -->
+</head>
+
+<body>
+    <header>
+
+        <div class="nav-search-container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+            <div class="icons">
+                <a href="#"><button class="cart">🛒</button></a>
+                <a href="#" type="_blank"><button class="profile">👤</button></a>
+            </div>
+        </div>
+        <a class="signup-button" href="Login.html">Signup</a>
+    </header>
+    <div class="banner">
+        <img src="img/Singhai-traders.jpeg" alt="Cleaning Fittings">
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="filter">
+            <h2>Filter by Category</h2>
+            <ul>
+                <li><input type="checkbox" id="all" checked>
+                    <label for="all">All</label></li>
+                <li><input type="checkbox" id="Health Faucet & Jet Spray">
+                    <label for="Health Faucet & Jet Spray">Health Faucet & Jet Spray</label></li>
+                <li><input type="checkbox" id="toilet">
+                    <label for="toilet">Toilet</label></li>
+                <li><input type="checkbox" id="sanitary">
+                    <label for="sanitary">Sanitary</label></li>
+                <li><input type="checkbox" id="Cistern Flush Tank">
+                    <label for="Cistern Flush Tank">Cistern Flush Tank</label></li>
+                <li><input type="checkbox" id="Wash Basin">
+                    <label for="Wash Basin">Wash Basin</label></li>
+                <li><input type="checkbox" id="Wash Basin Faucet">
+                    <label for="Wash Basin Faucet">Wash Basin Faucet</label></li>
+                <li><input type="checkbox" id="Hand Shower">
+                    <label for="Hand Shower">Hand Shower</label></li>
+                <li><input type="checkbox" id="other">
+                    <label for="other">Other</label></li>
+            </ul>
+            <button>Apply Filter</button>
+            <div class="sort-by">
+                <h2>Sort By</h2>
+                <select>
+                <option value="Default">Default</option>
+                <option value="Price: High to Low">Price: High to Low</option>
+                <option value="Price: Low to High">Price: Low to High</option>
+            </select>
+                <button>Sort</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="topic2">
+        <h2>Shop By Category</h2>
+    </div>
+    <div class="container2">
+        <div class="box">
+            <a href="#"><img src="img/Senator Sanitaryware banner.jpg" alt="Senator"></a>
+            <h2 align="center">Senator</h2>
+        </div>
+        <div class="box">
+            <a href="#"><img src="img/New_04_0.jpg" alt="Lustre"></a>
+            <h2 align="center">Lustre</h2>
+        </div>
+        <div class="box">
+            <a href="#"><img src="img/Cera Luxe.jpeg" alt="Cera Luxe"></a>
+            <h2 align="center">Cera Luxe</h2>
+        </div>
+        <div class="box">
+            <a href="#"><img src="img/01 - Main banner_0.jpg" alt="EWC"></a>
+            <h2 align="center">EWC</h2>
+        </div>
+        <div class="box">
+            <a href="#"><img src="img/B1010109-1_0.jpg" alt="Polymer Cistern"></a>
+            <h2 align="center">Polymer Cistern</h2>
+        </div>
+        <div class="box">
+            <a href="#"><img src="img/Seat Cover banner_Desktop.jpg" alt="Seat Cover"></a>
+            <h2 align="center">Seat Cover</h2>
+        </div>
+        <div class="box">
+            <a href="#"><img src="img/Wash basin desktop banner_1366x450.jpg" alt="Basins"></a>
+            <h2 align="center">Basins</h2>
+        </div>
+        <div class="box">
+            <a href="#"><img src="img/Urinal Website Banner.jpg" alt="Urinals"></a>
+            <h2 align="center">Urinals</h2>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Products Card</h2>
+        <section class="products">
+            <div class="product-card">
+                <img src="img/product1.jpg" alt="Product 1">
+                <h3>Health Faucet</h3>
+                <p>Price: Rs.120</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/product2.jpg" alt="Product 2">
+                <h3>Toilet</h3>
+                <p>Price: Rs.180</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/product3.jpg" alt="Product 3">
+                <h3>Sanitary</h3>
+                <p>Price: Rs.150</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/product4.jpg" alt="Product 4">
+                <h3>Cistern Flush Tank</h3>
+                <p>Price: Rs.200</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/product5.jpg" alt="Product 5">
+                <h3>Wash Basin</h3>
+                <p>Price: Rs.100</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/product6.jpg" alt="Product 6">
+                <h3>Wash Basin Faucet</h3>
+                <p>Price: Rs.130</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="img/product7.jpg" alt="Product 7">
+                <h3>Hand Shower</h3>
+                <p>Price: Rs.80</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+    </div>
+    <div class="featured-section">
+        <h1>FEATURED</h1>
+        <div class="featured-container">
+            <a href="https://in.toto.com/delhi-showroom/" class="featured-item delhi-showroom">
+                <span>DELHI SHOWROOM</span>
+            </a>
+            <a href="https://in.toto.com/technology/" class="featured-item technologies">
+                <span>TECHNOLOGIES</span>
+            </a>
+            <a href="https://in.toto.com/washlet/" class="featured-item washlet">
+                <span>WASHLET</span>
+            </a>
+        </div>
+    </div>
+    <div class="container4">
+        <h2>OTHER INFORMATION</h2>
+        <div class="info-section">
+            <div class="info-item">
+                <a href="https://in.toto.com/contact-us/"><img src="img/contact-image.png" alt="Contact Us">
+                    <div class="info-text">CONTACT US</div>
+                </a>
+            </div>
+            <div class="info-item">
+                <a href="https://in.toto.com/product-faqs/">
+                    <img src="img/faqs-image.png" alt="FAQs">
+                    <div class="info-text">FAQS</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container3">
+        <a class="logo-container">
+            <a href="https://www.americanstandard.in/bathrooms/toilets/"><img src="img/AS_1.jpg" alt="American Standard"></a>
+            <a href="http://www.dooa.in/products/"> <img src="img/Dooa_1.jpg" alt="Doaa"></a>
+            <a href="https://www.duravit.in/?utm_source=google&utm_medium=cpc&utm_campaign=search&utm_term=general_home_page&gad_source=1&gclid=CjwKCAjwk8e1BhALEiwAc8MHiGFE24lgtxl85zjqdT_LnmKDpiuWjKbYTYobptuy2IFjRAGBKWidChoCDIIQAvD_BwE"><img src="img/Duravit_1.jpg" alt="Duravit"></a>
+            <a href="https://www.grohe.co.in/en_in/"><img src="img/Grohe_1.jpg" alt="Grohe"></a>
+            <a href="https://ws.franke.co.za/sanitaryware"><img src="img/Franke.jpg" alt="Franke"></a>
+            <a href="https://in.toto.com/"><img src="img/Toto_1.jpg" alt="Toto"></a>
+    </div>
+    </div>
+    <footer>
+
+        <div class="footer-section footer-company">
+            <h4>Company</h4>
+            <p><a href="#">About</a></p>
+            <p><a href="#">Media Coverage</a></p>
+            <p><a href="#">Blog</a></p>
+        </div>
+        <div class="footer-section footer-for-you">
+            <h4>For You</h4>
+            <p><a href="#">Contact Us</a></p>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Terms And Conditions</a></p>
+        </div>
+        <div class="footer-section footer-location">
+            <h4>Location</h4>
+            <p><a href="https://www.google.com/maps/place/Balaghat,+Madhya+Pradesh/@21.8117746,80.1478373,13z/data=!3m1!4b1!4m6!3m5!1s0x3a2a59629b97d1cb:0x48cd0fa375dfe590!8m2!3d21.812876!4d80.1838293!16zL20vMDdidmQ4?entry=ttu">Balaghat</a></p>
+            <p><a href="https://www.google.com/maps/place/Gondia,+Maharashtra/@21.4615104,80.154025,13z/data=!3m1!4b1!4m6!3m5!1s0x3a2baead0a4b0175:0x718607d421888196!8m2!3d21.4549477!4d80.1960712!16zL20vMDk1X2Zu?entry=ttu">Gondia</a></p>
+            <p><a href="https://www.google.com/maps/place/Nagpur,+Maharashtra/@21.161226,78.9901079,12z/data=!3m1!4b1!4m6!3m5!1s0x3bd4c0a5a31faf13:0x19b37d06d0bb3e2b!8m2!3d21.1458004!4d79.0881546!16zL20vMDJjOTht?entry=ttu">Nagpur</a></p>
+        </div>
+        <div class="footer-section footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: info@sanitaryfittings.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 5th Floor, 362-363, Rao Gajraj Singh Marg, Phase IV, Udyog Vihar, Sector 18, Gurugram, Haryana 122016</p>
+        </div>
+        <div class="footer-section footer-social">
+            <a href="https://www.facebook.com/">
+                <img src="img/facebook.png" alt="Facebook" width="50px" height="50px">
+            </a>
+            <a href="https://x.com/?lang=en">
+                <img src="img/twitter1.png" alt="Twitter" width="50px" height="50px">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img src="img/instagram1.png" alt="Instagram" width="50px" height="50px">
+            </a>
+            <a href="https://www.youtube.com/watch?v=WU9DYPYANCw/">
+                <img src="img/Youtude.png" alt="YouTube" width="50px" height="50px">
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sanitary Fittings. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
